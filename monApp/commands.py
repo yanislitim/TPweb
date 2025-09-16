@@ -28,15 +28,15 @@ def loaddb(filename):
                 db.session.commit()
 
                 # deuxième passe : création de tous les livres
-                for livre in lesLivres:
-                    auteur = lesAuteurs[livre["author"]]
-                    objet = Livre(
-                        Prix=livre["price"],
-                        Titre=livre["title"],
-                        Url=livre["url"],
-                        Img=livre["img"],
-                        auteur_id=auteur.idA
-                    )
-                    db.session.add(objet)
-                    db.session.commit()
-                    lg.warning('Database initialized!')
+        for livre in lesLivres:
+            auteur = lesAuteurs[livre["author"]]
+            objet = Livre(
+                Prix=livre["price"],
+                Titre=livre["title"],
+                Url=livre["url"],
+                Img=livre["img"],
+                auteur_id=auteur.idA
+            )
+            db.session.add(objet)
+        db.session.commit()
+        lg.warning('Database initialized!')
