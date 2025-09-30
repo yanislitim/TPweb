@@ -4,7 +4,7 @@ SECRET_KEY = "2lzUl{$*D6#`8uXqlU."
 
 ABOUT = "Bienvenue sur la page à propos de Flask !"
 
-CONTACT = "Viens sur ma page Insta : https://www.instagram.com/iutorleans_officiel/"
+CONTACT = "Bienvenue sur l'autre page la"
 
 import os
 basedir = os.path.abspath(os.path.dirname(__file__))

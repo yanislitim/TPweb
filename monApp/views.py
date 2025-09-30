@@ -3,16 +3,16 @@ from flask import render_template
 @app.route('/')
 @app.route('/index/')
 def index():
-    return render_template("index.html",title ="R3.01 Dev Web avec Flask",name="yanis gros looser")
+    return render_template("index.html",title ="R3.01 Dev Web avec Flask",name="yanis")
 
 @app.route("/about/")
 def about():
-    return render_template("index2.html",title ="R3.01 Dev Web avec Flask",name="yanis gros gros looser")
+    return render_template("about.html",title ="R3.01 Dev Web avec Flask",name="yanis r")
 
 
 @app.route("/contact/")
 def contact():
-    return app.config["CONTACT"]
+    return render_template("contact.html", title = "R3.01 Dev Web avec Flask",name = "yanis er")
 
 if __name__== "__main__" :
     app.run()
