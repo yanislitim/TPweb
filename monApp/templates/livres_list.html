@@ -23,7 +23,7 @@
             <td>{{ unLivre.Titre }}</td>
             <td>{{ unLivre.Prix }}</td>
             <td>{{ unLivre.Url }}</td>
-            <td><img src="{{url_for('static',filename = 'images/'~unLivre.Img)}}" alt="couverture pour dormir"> </td>
+            <td><img src="{{url_for('static',filename = 'images/'~unLivre.Img)}}" alt="couverture du livre"> </td>
             <td>{{ unLivre.auteur.Nom }}</td>
         </tr>
         {% endfor %}

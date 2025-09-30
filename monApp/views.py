@@ -12,7 +12,7 @@ def index():
         param_name = request.args.get('name')
         return render_template("index.html",title="R3.01 Dev Web avec Flask",name=param_name)
 
-@app.route('/auteurs/')
+@app.route ("/auteurs/<idA>/")
 def getAuteurs():
     lesAuteurs = Auteur.query.all()
     return render_template('auteurs_list.html', title="R3.01 Dev Web avec Flask", auteurs=lesAuteurs)
